@@ -1,14 +1,9 @@
-package org.javalusir.test;
+package org.javalusir.mail;
 
-import java.io.InputStreamReader;
-import java.io.Reader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Enumeration;
 import java.util.Properties;
-import javax.mail.Flags;
 import javax.mail.Folder;
-import javax.mail.Header;
 import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Store;
@@ -16,12 +11,12 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeUtility;
 //利用POP3来读取邮件
 //主要用来检测消息Message的基本信息，如发送者，收信者，时间
-public class AA {
+public class ReceiveMail {
     public static void main(String[] args) {
         Properties props = System.getProperties();
         String host = "pop3.163.com";
         String username = "javalusir@163.com";
-        String password = "lx6416214";
+        String password = "123";
         String provider = "pop3";
         try {
             // 连接到POP3服务器

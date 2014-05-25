@@ -2,20 +2,15 @@ package org.javalusir.test;
 
 import java.util.Properties;
 
-import javax.mail.Address;
 import javax.mail.Authenticator;
 import javax.mail.Folder;
 import javax.mail.Message;
-import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Store;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.util.MimeMessageParser;
-import org.apache.commons.mail.util.MimeMessageUtils;
 
 public class JMail {
 
@@ -37,7 +32,7 @@ public class JMail {
         //prop.setProperty("mail.transport.protocol", "smtp"); 
         
         String protocol="imap";
-        Authenticator auth = new DefaultAuthenticator("qqaaa_1@tom.com","6416214");
+        Authenticator auth = new DefaultAuthenticator("qqaaa_1@tom.com","123456");
         
         Session session = Session.getInstance(prop, auth);
         
@@ -57,8 +52,8 @@ public class JMail {
                     	MimeMessageParser mp = new MimeMessageParser((MimeMessage)message).parse();
                     	String userFrom = mp.getFrom();
                     	String title = mp.getSubject();
-                    	String text = mp.getPlainContent();
-                    	String htmlContent = mp.getHtmlContent();
+                    	//String text = mp.getPlainContent();
+                    	//String htmlContent = mp.getHtmlContent();
                     	System.out.println("来自:"+userFrom);
                     	System.out.println("主题:"+title);
                     	//System.out.println("内容:"+text);

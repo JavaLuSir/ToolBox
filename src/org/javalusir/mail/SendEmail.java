@@ -1,4 +1,4 @@
-package org.javalusir.test;
+package org.javalusir.mail;
 
 import java.util.Properties;
 
@@ -16,7 +16,7 @@ import org.apache.commons.mail.DefaultAuthenticator;
 public class SendEmail {
 	
 	public static void main(String[] args) throws MessagingException {
-		Authenticator auth = new DefaultAuthenticator("javalusir@163.com","lx6416214");
+		Authenticator auth = new DefaultAuthenticator("javalusir@163.com","123123");
 		Properties prop = new Properties();
 		// 开启debug调试  
         prop.setProperty("mail.debug", "true"); 
@@ -28,11 +28,11 @@ public class SendEmail {
         prop.setProperty("mail.transport.protocol", "smtp"); 
         Session session = Session.getInstance(prop,auth);
         Message msg = new MimeMessage(session);
-        msg.setSubject("亲爱的~~This is a JavaMail Test!");
-        msg.setText("亲爱的这是我发的邮件");
+        msg.setSubject("亲This is a JavaMail Test!");
+        msg.setText("亲,是我发的邮件");
         msg.setFrom(new InternetAddress("javalusir@163.com"));
         Transport transport = session.getTransport();
-        transport.connect("javalusir@163.com","lx6416214");
+        transport.connect("javalusir@163.com","123");
         transport.sendMessage(msg, new Address[]{new InternetAddress("641149960@qq.com")});
         transport.close();
 	}
