@@ -52,6 +52,7 @@ public class DevideFinding {
 	 * insert value
 	 */
 	public void insert(){
+		bubbleSort();
 		
 	}
 	
@@ -84,6 +85,18 @@ public class DevideFinding {
 		}
 	}
 	
+	/**
+	 * get array real size
+	 */
+	public int trimToSize(){
+		bubbleSort();
+		for(int i=0;i<dfarry.length;i++){
+			if(dfarry[i]==0)
+				return i+=1;
+		};
+		return length;
+	}
+	
 	
 	/**
 	 * show array all value
@@ -98,9 +111,12 @@ public class DevideFinding {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		//Integer[] a = new Integer[]{5,34,123,76,98,4};
 		int[] a = new int[]{5,34,123,76,98,4};
 		Sort.insertSort(a);
 		DevideFinding df = new DevideFinding(a.length,a);
+		System.out.println("!!"+df.trimToSize());
+		
 		//df.bubbleSort();
 		System.out.println(df.find(76));
 		df.display();
