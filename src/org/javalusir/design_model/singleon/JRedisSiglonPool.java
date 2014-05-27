@@ -1,4 +1,4 @@
-package org.javalusir.singleon;
+package org.javalusir.design_model.singleon;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;

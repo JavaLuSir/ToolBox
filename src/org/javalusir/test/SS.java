@@ -3,7 +3,8 @@ package org.javalusir.test;
 import java.io.Serializable;
 
 
-import org.javalusir.singleon.Singleon;
+
+import org.javalusir.design_model.singleon.Singleon;
 
 public class SS implements Runnable,Serializable{
 	private Object a = null;

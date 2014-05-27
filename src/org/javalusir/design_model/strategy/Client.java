@@ -1,4 +1,4 @@
-package org.javalusir.strategy;
+package org.javalusir.design_model.strategy;
 
 /**
  *  a client class is use to execute Strategy model

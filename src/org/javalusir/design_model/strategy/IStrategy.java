@@ -1,4 +1,4 @@
-package org.javalusir.strategy;
+package org.javalusir.design_model.strategy;
 /**
  * desgin model of Strategy
  * @author JavaLuSir

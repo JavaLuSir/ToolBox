@@ -1,4 +1,4 @@
-package org.javalusir.singleon;
+package org.javalusir.design_model.singleon;
 /**
  * singlon demo
  * @author javalusir
