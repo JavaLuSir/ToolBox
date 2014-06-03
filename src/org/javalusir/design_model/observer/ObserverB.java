@@ -1,5 +1,9 @@
 package org.javalusir.design_model.observer;
-
+/**
+ * implements Observer
+ * @author JavaLuSir
+ *
+ */
 public class ObserverB implements IObserver{
 
 	private String state;

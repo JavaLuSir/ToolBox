@@ -1,5 +1,10 @@
 package org.javalusir.design_model.observer;
 
+/**
+ * invoke observer design model
+ * @author JavaLuSir
+ *
+ */
 public class Client {
 
 	public static void main(String[] args) {

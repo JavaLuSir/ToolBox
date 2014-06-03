@@ -1,5 +1,10 @@
 package org.javalusir.design_model.strategy;
 
+/**
+ * 
+ * @author JavaLuSir
+ *
+ */
 public class TrainStrategy implements IStrategy{
 
 	@Override

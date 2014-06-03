@@ -1,5 +1,10 @@
 package org.javalusir.design_model.producer_consumer;
 
+/**
+ * this producter and consumer design model
+ * @author JavaLuSir
+ *
+ */
 public class ProductStorage {
 	
 	public static final int MAXNUM=80;
@@ -15,7 +20,9 @@ public class ProductStorage {
 			return  new ProductStorage();
 		return instance;
 	}
-	
+	/**
+	 * puduct a thing
+	 */
 	public synchronized void puduct(){
 		if(CURRENNUM>=MAXNUM/2){
 			try {
@@ -28,7 +35,9 @@ public class ProductStorage {
 		System.out.println("当前线程："+Thread.currentThread().getName() + "--生产者生产了一个商品，当前库存量："+ CURRENNUM);
         notifyAll();
 	}
-	
+	/**
+	 * consum a thing
+	 */
 	public synchronized void consumer(){
 		if(CURRENNUM<0){
 			try {

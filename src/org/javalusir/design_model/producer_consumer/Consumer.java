@@ -1,5 +1,9 @@
 package org.javalusir.design_model.producer_consumer;
-
+/**
+ * Consumer
+ * @author JavaLuSir
+ *
+ */
 public class Consumer implements Runnable{
 
 	@Override
