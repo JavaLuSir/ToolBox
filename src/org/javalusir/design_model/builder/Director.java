@@ -1,5 +1,9 @@
 package org.javalusir.design_model.builder;
-
+/**\
+ * 
+ * @author JavaLuSir
+ *
+ */
 public class Director {
 
 	private Builder build;
