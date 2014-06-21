@@ -1,4 +1,4 @@
-package org.javalusir.design_model.Adapter;
+package org.javalusir.design_model.adapter;
 
 public class Client {
 
