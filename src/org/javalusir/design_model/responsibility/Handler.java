@@ -1,4 +1,4 @@
-package org.javalusir.design_model.responsibiliby;
+package org.javalusir.design_model.responsibility;
 
 public abstract class Handler {
 
