@@ -3,7 +3,7 @@ package org.javalusir.design_model.mediator;
 public abstract class Colleague {
 	
 	public Colleague(AbstractMediator mediator){
-		
+		this.mediator=mediator;
 	}
 	protected AbstractMediator mediator;
 

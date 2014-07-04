@@ -1,8 +1,8 @@
 package org.javalusir.design_model.mediator;
 
-public class User extends Colleague{
+public class Worker extends Colleague{
 
-	public User(AbstractMediator mediator) {
+	public Worker(AbstractMediator mediator) {
 		super(mediator);
 	}
 
@@ -14,7 +14,7 @@ public class User extends Colleague{
 
 	@Override
 	public void receivedMessage(String msg) {
-		System.out.println("Colleague has got the message -'" + msg + "'");
+		System.out.println("woker has got the message -'" + msg + "'");
 	}
 	
 	
