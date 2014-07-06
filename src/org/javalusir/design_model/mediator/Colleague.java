@@ -9,7 +9,12 @@ public abstract class Colleague {
 
 	protected String message;
 	
-	public abstract void sendMessage(String message);
+	public abstract void sendMessage();
+	
+	public void sendMessage(String message){
+		this.message=message;
+		mediator.action(this);
+	}
 	
 	public abstract void receivedMessage(String msg);
 	

@@ -7,14 +7,13 @@ public class User extends Colleague{
 	}
 
 	@Override
-	public void sendMessage(String message) {
-		this.message=message;
-		mediator.action(this);
+	public void receivedMessage(String msg) {
+		System.out.println("user has got the message -'" + msg + "'");
 	}
 
 	@Override
-	public void receivedMessage(String msg) {
-		System.out.println("Colleague has got the message -'" + msg + "'");
+	public void sendMessage() {
+		System.out.println("user has send the message -'" + this.getMessage() + "'");
 	}
 	
 	

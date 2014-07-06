@@ -1,7 +1,10 @@
 package org.javalusir.design_model.mediator;
 
-public class Mediator extends AbstractMediator{
+import java.util.ArrayList;
+import java.util.List;
 
+public class Mediator extends AbstractMediator{
+	public List<Colleague> list = new ArrayList<Colleague>(0);
 	@Override
 	public void addColleague(Colleague c) {
 		list.add(c);
@@ -24,7 +27,7 @@ public class Mediator extends AbstractMediator{
 		   // send msg
 		   for (Colleague colleague : list) {
 		    if (colleague.equals(c)) {
-		     colleague.sendMessage(msg);
+		     colleague.sendMessage();
 		     break;
 		    }
 		   }
