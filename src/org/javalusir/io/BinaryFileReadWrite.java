@@ -47,14 +47,26 @@ public class BinaryFileReadWrite {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally{
-			try {
-				bi.close();
-				fs.close();
-				bo.close();
-				fo.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+				try {
+					bi.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				try {
+					fs.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				try {
+					bo.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				try {
+					fo.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			
 		}
 	}
